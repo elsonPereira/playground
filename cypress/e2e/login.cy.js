@@ -11,7 +11,7 @@ describe('Login', () => {
 
   it('Não deve logar com senha inválida', () => {
     cy.login('papito@cyskills.com.br', 'abc123456')
-    cy.noticeHave('E-mail ou senha incorreto. Por favor, tente novamente!')
+    cy.noticeHave('E-mail ou senha incorretos. Por favor, tente novamente!')
   })
 
   it('Não deve logar com email não cadastrado', () => {
